@@ -8,7 +8,10 @@ begin
   #binding.pry
   buckets = storage.buckets
   buckets.all do |bucket|
-    puts bucket.name
+    puts "Bucket : #{bucket.name}"
+    bucket.files.all do |f|
+      puts "\tFile: #{f.name}"
+    end
   end
 rescue Exception => e
   puts e.message

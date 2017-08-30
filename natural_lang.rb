@@ -12,7 +12,7 @@ begin
       :neutral_factual => "China and India has more than two billion in population." ,
       :positve => "I had a great time with my friends and family last weekend!" ,
       :sarcasm => "Oh! What a beauty! The life I have created for myself." ,
-      :negative => "I had to wait for eight long fuc*** hours in line with no water and hot and humid weather."
+      :negative => "I had to wait for eight long fuc*** hours in the line with no water and the weather was hot and humid."
   }
 
   texts.each do |t|

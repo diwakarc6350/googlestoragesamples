@@ -8,7 +8,7 @@ language = Google::Cloud::Language.new(
     keyfile: "./access_key.json")
 
 texts = {
-    :neutral => "The lines are long in walmart on Sunday's." ,
+    :neutral => "There are huge lines at the walmart." ,
     :neutral_factual => "China and India has more than two billion in population." ,
     :positve => "I had a great time with my friends and family last weekend!" ,
     :sarcasm => "Oh! What a beauty! The life I have created for myself." ,

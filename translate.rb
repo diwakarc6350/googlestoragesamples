@@ -8,7 +8,7 @@ begin
       keyfile: "./access_key.json")
 
   puts "Supported languages:"
-  translate.languages.each do |language|    
+  translate.languages.each do |language|
     puts "#{language.code} #{language.name}"
   end
 
@@ -16,6 +16,8 @@ begin
   detections.each do |d|
     STDOUT.write "#{d.text} | "
     STDOUT.write "#{d.language} | "
+    translated = translate.translate d.text, to: 'en' #translate the word to english
+    STDOUT.write "#{translated} | "
     STDOUT.write "#{d.confidence} | \n"
   end
 
